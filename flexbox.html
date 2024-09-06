@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    main {
+        width: 60%;
+        height: 100vh;
+        margin: auto;
+        border: 5px solid darkblue;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:space-evenly;
+        align-content:space-around;
+        align-items: center;
+    }
+    .box {
+        width: 100px;
+        height: 100px;
+        text-align: center;
+    }
+    .box1 {
+        background-color: lightblue;
+        flex-grow: 2;
+    }
+    .box2 {
+        background-color: lightpink;
+        order: 100;
+        flex: 1 10 300px;
+    }
+    .box3 {
+        background-color: lightgreen;
+        flex-grow: 4;
+    }
+    .box4 {
+        background-color: lightgray;
+    }
+    .box5 {
+        background-color: lightsteelblue;
+    }
+    .box6 {
+        background-color: lightgoldenrodyellow;
+    }
+    
+</style>
+<body>
+    <main>
+        <h1 class="box box1">1</h1>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box5">5</div>
+        <div class="box box5">6</div>
+      </main>
+</body>
+</html>

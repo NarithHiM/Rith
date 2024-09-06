@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", system-ui;
+  }
+  body {
+    background-color: whitesmoke;
+  }
+  header {
+    background-color: darkblue;
+    color:white;
+    padding: 20px 0;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+  & ul {
+    list-style: none;
+    display: flex;
+    gap: 200px;
+    justify-content: center;
+  }
+  & img {
+    border-radius: 50%;
+  }
+  & button {
+    border-radius: 20%;
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: whitesmoke;
+    color: darkblue;
+  }
+  }
+  main {
+    padding: 50px 200px;
+    &h1 {
+        font-size: 45px;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    & .description {
+        font-size: 20px;
+        color: gray;
+        text-align: center;
+    }
+    & .tab-section {
+        margin: 50px 0;
+        display: flex;
+        padding: 25px 0;
+        background-color: #e8f0fa;
+        justify-content: space-around;
+        border-radius: 10px;
+        box-sizing: border-box;
+        color: #5a96d8;
+    }
+    .section2 {
+        display: flex;
+        gap: 40px;
+        flex-wrap: wrap;
+        & .card {
+            width: 350;
+            background-color: white;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        & img {
+            width: 350px;
+        }
+        & .card-body {
+            padding: 15px 25px;
+        }
+        & .level {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            & p {
+                padding: 8px 20px;
+                background-color: #f1eef9;
+                color:#7449c3;
+                border-radius: 10px;
+                margin-bottom: 10px;
+            }
+        }
+        & .text {
+            padding-bottom: 20px;
+            & h2 {
+                padding-bottom: 15px;
+            }
+            & p {
+                color:gray;
+                line-height: 25px;
+            }
+        }
+        & .stars {
+            display: flex;
+            padding-bottom: 20px;
+            justify-content: space-between;
+            & i {
+                color: gold;
+            }
+        }
+        & .card-footer {
+            padding-top: 20px;
+            display: flex;
+            justify-content: space-between;
+
+            & span {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+            }
+            & .fa-clock {
+                color: hotpink;
+            }
+            & .fa-calender {
+                color: orange;
+            }
+        }
+    }
+}
+
+.components {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.components p {
+    padding: 8px;
+}
+
+.components p:hover {
+    background-color: #5a96d8;
+    color: #e8f0fa;
+    
+}

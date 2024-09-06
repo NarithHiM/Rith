@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Layout</title>
+    <style>
+      body {
+        display: grid;
+        font-size: 20px;
+        gap: 20px;
+        grid-template-areas: 
+        'header header header header'
+        'aside main main main'
+        'aside footer footer footer'
+        ;
+      }
+      .header {
+        background-color: aquamarine;
+        grid-area: header;
+        
+      }
+      .aside {
+        background-color: aquamarine;
+        grid-area: aside;
+      }
+      .main {
+        background-color: aquamarine;
+        grid-area: main;
+      }
+      .footer {
+        background-color: aquamarine;
+        grid-area: footer;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">Header</header>
+    <aside class="aside">Menu</aside>
+    <main class="main">Main</main>
+    <footer class="footer">Footer</footer>
+  </body>
+</html>
